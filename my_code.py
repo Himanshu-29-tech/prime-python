@@ -204,7 +204,7 @@ area = pie*r**2
 p=int(input("take the p: "))
 r=int(input("takr the rate: "))
 t=int(input("take the time: "))
-simple_interrest=(p*r*t)/100
+simple_interest=(p*r*t)/100
 print(float(simple_interest))
 
 # TAke a decimal number as input like 45.78 and output its:
