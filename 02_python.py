@@ -51,6 +51,7 @@ elif age >= 13 and age < 18:
 else:
     print("You are an adult")
 
+print("----------------------------------")
 
 
  # ================= IF - ELIF - ELSE (USERNAME) ===============
@@ -65,6 +66,7 @@ elif (username != "admin"):
 else:
     print("wrong password")
 
+print("----------------------------------")
 
 # ================ example multiple or not  =============
 
@@ -75,3 +77,42 @@ if (n% 5 == 0):
 else:
     print("not multiple of 5")
 
+
+print("----------------------------------")
+
+# ========== ODD OR EVEN ==========
+
+# IF ANY NUMBER IS DIVISIBLE BY 2 THEN IT'S EVEN NUMBER
+# IF ANY NUMBER IS NOT DIVISIBLE BY 2 THEN IT'S ODD NUMBERS
+
+num = int(input("Num: "))
+
+if (num % 2 == 0) :
+    print("it's even number")
+else:
+    print("it's odd number")
+
+print("----------------------------------")
+# =========== NESTING =========
+
+# 💁Nesting = if inside if
+# 💁Used when you need to check one more condition after the first one is true
+
+username = input("enter username: ")
+password = input("enter passwords: ")
+
+if (username == "admin" and password == "pass"):
+    print("sucess")
+else:                  # if inside if 
+    if (username != "admin"):
+        print("wrong usernme")
+    else:
+        print("wrong password")
+
+print("----------------------------------")
+
+# ==========KEY POINT =======
+
+# you can write multiple if-if-if condition
+# single if can be written
+# byt elif  amd else exist only with if 
