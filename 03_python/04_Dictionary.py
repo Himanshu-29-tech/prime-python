@@ -11,10 +11,18 @@ dict = {"name" : "Himanshu", "subject" : ["maths","science"],"score" : 97}
 
 print(dict)
 
+print("----------------------------------")
+
+
 print(type(dict))
+
+
+print("----------------------------------")
+
 
 print(dict["name"]) # it's return the value that's index is given
 
+print("----------------------------------")
 #=========== dictionary are mutable and unordered ==================
 
 dict = {"name" : "Himanshu", "subject" : ["maths","science"],"score" : 97}
@@ -24,7 +32,7 @@ dict["name"] = "Aman" # value will  be changed
 
 print(dict)
 
-
+print("----------------------------------")
 
 #============== METHODS IN DICTONARY ==========
 
@@ -38,6 +46,8 @@ dict = {"name" : "Himanshu", "subject" : ["maths","science"],"score" : 97}
 
 print(dict.keys())
 
+print("----------------------------------")
+
 # dict[key] -->> val ---> if key is not exist then then it's give error value
 
 # dict.get(key) -->> val ---> if key is not exist then it's give NONE value
@@ -46,6 +56,8 @@ dict = {"name" : "Himanshu", "subject" : ["maths","science"],"score" : 97}
 
 print(dict.get("name2")) #wrong key -->> it's give None value
 
+
+print("----------------------------------")
 # print(dict.["name2"])        #wrong key -->> it's give error
 
 dict.update({
@@ -53,3 +65,5 @@ dict.update({
 })
 # it's update the value 
 print(dict)
+
+print("----------------------------------")
