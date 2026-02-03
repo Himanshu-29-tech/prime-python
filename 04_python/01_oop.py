@@ -76,4 +76,22 @@ stu3 = Student("Utkarsh", 8.5)
 stu4 = Student("Himanshu", 7.6)
 
 
-#=========== TYPE OF CONSTRUCTOR =========
+# =========== TYPE OF CONSTRUCTOR =========
+# Parameterized Constructor example
+
+class Student:
+    def __init__(self, name, cgpa):   # parameterized constructor
+        self.name = name
+        self.cgpa = cgpa
+
+    def get_cgpa(self):
+        return self.cgpa
+
+
+stu1 = Student("Rahul", 8.2)
+stu2 = Student("Shradha", 7.9)
+stu3 = Student("Utkarsh", 8.5)
+
+print(stu1.get_cgpa())
+
+
