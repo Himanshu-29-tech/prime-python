@@ -38,3 +38,33 @@ stu2 = Student1("Tulshi", 9.2)
 print(stu2.name)
 print(Student1.college_name1)
 print(stu2.PI)
+
+
+
+
+
+#========== Different type of methods ===========
+
+# instance
+# |
+# | 1st parameter self
+# | acess the class & instance attributes 
+
+class laptop:
+    storage_type = "ssd"
+
+    def __init__(self,Ram,storage):
+        self.Ram = Ram
+        self.storaage = storage
+
+    def get_info(self):
+        print(f"laptop has{self.ram} ram & {self.storage}.{self.storage_type}")
+
+    l1 = laptop("16gb", "512gb")
+    l2 = laptop("8gb", "256gb")
+
+
+#class 
+# |
+|
+|
