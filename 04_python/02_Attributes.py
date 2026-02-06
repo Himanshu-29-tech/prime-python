@@ -64,15 +64,16 @@ class laptop:
     l2 = laptop("8gb", "256gb")
 
 
-#class 
+#=============== class =================
+
 # | 1 st parameter of class is cls
 # | acess the only class attributes
 # | decorator @classmethod ----->> a type of function which change the behaviour
 
 #example
 
-class laptop;
-torage_type = "ssd"
+class laptop:
+        storage_type = "ssd"
 
 
 def __init__(self,Ram,storage):
@@ -90,3 +91,36 @@ def get_info(self): #instance method
 l1 = laptop("16gb" , "512gb")
 
 l1.get_storage_type()
+
+
+
+#================ Static ==============
+
+# no compulsory parameter
+# no acess of instance or class
+# decorator @staticmethod --->>> 
+
+
+class laptop:
+        storage_type = "ssd"
+
+
+def __init__(self,Ram,storage):
+    self.Ram = Ram
+    self.storage = storage
+
+@classmethod
+def get_storage_type(cls):
+    print(f"storage type = {cls.storage_type}")
+
+def get_info(self): #instance method
+    print(f"laptop has{self.Ram} Ram & {self.storage} {self.storage_type}")
+
+@staticmethod
+def clc_discount(price,discount):
+    final_price = price - (discount * price / 100)
+    print(f"discounted price = {final_price}")
+
+l1 = laptop("16gb" , "512gb")
+
+l1.calc_discount(40_000,10)
