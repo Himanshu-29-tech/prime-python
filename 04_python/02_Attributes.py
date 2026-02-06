@@ -136,17 +136,51 @@ l1.calc_discount(40_000, 10)
 # Track total products being created.
 # Create a static method to calculate discount on each product based on a % parameter.
 
+#++++++++++ step1-Product store ++++++++++++
 
-class product:
-    def __init__(self,name,price):
-        self.name = name
-        self.price = price
+# class product:
+#     def __init__(self,name,price):
+#         self.name = name
+#         self.price = price
 
-    def get_info(self):
-        print(f"price of {self.name} is Rs.{self.price}")
+#     def get_info(self):
+#         print(f"price of {self.name} is Rs.{self.price}")
 
-p1 = product("phone", 10_000)
-p2 = product("laptop", 50_000)
-p3 = product("pen", 10)
+# p1 = product("phone", 10_000)
+# p2 = product("laptop", 50_000)
+# p3 = product("pen", 10)
 
-p1.get_info()
+# p1.get_info()
+
+
+
+#+++++++++++.  step2-> track total product using classmethod +++++++++++++++++
+
+
+
+# class product:
+#     count = 0
+
+#     def __init__(self,name,price):
+#         self.name = name
+#         self.price = price
+#         product.count += 1
+
+#     def get_info(self): #instance methopd
+#         print(f"price of {self.name} is Rs.{self.price}")
+
+#     @classmethod
+#     def get_count(cls):
+#         print(f"total products in store = {cls.count}")
+
+# p1 = product("phone", 10_000)
+# p2 = product("laptop", 50_000)
+# p3 = product("pen", 10)
+
+# product.get_count()
+
+
+#++++++++++++  step3-to calculate discount on each product based on a % parameter   +++++++++++++++++++++
+
+
+
