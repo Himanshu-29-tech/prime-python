@@ -65,6 +65,28 @@ class laptop:
 
 
 #class 
-# |
-|
-|
+# | 1 st parameter of class is cls
+# | acess the only class attributes
+# | decorator @classmethod ----->> a type of function which change the behaviour
+
+#example
+
+class laptop;
+torage_type = "ssd"
+
+
+def __init__(self,Ram,storage):
+    self.Ram = Ram
+    self.storage = storage
+
+@classmethod
+def get_storage_type(cls):
+    print(f"storage type = {cls.storage_type}")
+
+def get_info(self): #instance method
+    print(F"laptop has{self.Ram} Ram & {self.storage} {self.storage_type}")
+
+
+l1 = laptop("16gb" , "512gb")
+
+l1.get_storage_type()
