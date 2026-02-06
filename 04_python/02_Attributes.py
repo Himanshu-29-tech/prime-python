@@ -182,5 +182,27 @@ l1.calc_discount(40_000, 10)
 
 #++++++++++++  step3-to calculate discount on each product based on a % parameter   +++++++++++++++++++++
 
+class product:
+    count = 0
 
+    def __init__(self,name,price):
+        self.name = name
+        self.price = price
+        product.count += 1
 
+    def get_info(self): #instance method
+        print(f"price of {self.name} is Rs.{self.price}")
+
+    @classmethod
+    def get_count(cls):
+        print(f"total products in store = {cls.count}")
+
+    @staticmethod
+    def calc_discount(price,discount):
+        print(f"discounted price = {price - (price * discount/100)}")
+
+p1 = product("phone", 10_000)
+p2 = product("laptop", 50_000)
+p3 = product("pen", 10)
+
+p1.calc_discount(10_000,12)
