@@ -53,3 +53,56 @@ staff1 = adminstaff("Manager")
 
 # accessing instance variable + inherited class variables
 print(staff1.role, staff1.start_time, staff1.end_time)
+
+
+
+#======= type of inheritance =========
+# ---->> single level inheritance
+# ---->> multi line inheritance
+# ---->> multiple inheritance
+
+# Parent class
+class Employee:
+    start_time = "10am"   # class variable
+    end_time = "6pm"      # class variable
+
+
+# Child class inheriting Employee
+class AdminStaff(Employee):
+    def __init__(self, role):   # constructor
+        self.role = role
+
+
+# Grandchild class inheriting AdminStaff
+class Accountant(AdminStaff):
+    def __init__(self, salary, role):
+        super().__init__(role)   # calling parent class constructor
+        self.salary = salary    # instance variable
+
+
+# object creation
+acc1 = Accountant(25_000, "CA")
+
+# accessing instance variables and inherited class variables
+print(acc1.role, acc1.salary, acc1.start_time, acc1.end_time)
+
+
+
+#======= MULTIPLE INHERITANCE ===========
+class teacher:
+    def __init_(self,salary)
+    self.salary = salary
+
+class student:
+    def __init_(self,gpa):
+        self.gpa = gpa
+
+class TA(teacher,student):
+    def __init_(self,salary,gpa,name):
+        super(). __init_(salary)
+        student. __init_(self,gpa)
+        self.name = name
+
+ta1 = TA(15_000, 9.3) , "Himanshu")
+
+print(ta1.name, ta1.gpa, ta1.salary)
