@@ -1,0 +1,33 @@
+# ===== Terminal Session Log =====
+
+
+
+# Create directory
+mkdir installation
+
+# Correct command
+conda deactivate
+
+# Clear terminal
+clear
+
+
+
+
+mkdir installation
+# Output:
+# mkdir: installation: File exists
+
+# Navigate into directory
+cd installation
+
+# Check current path
+pwd
+# Output:
+# /Users/himanshuyadav/installation
+
+# Activate conda
+conda activate
+
+# Install Jupyter
+conda install jupyter
