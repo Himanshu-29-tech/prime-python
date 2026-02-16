@@ -1,0 +1,4 @@
+cd directory_name
+
+conda install jupyterlab
+
