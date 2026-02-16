@@ -2,3 +2,24 @@ cd directory_name
 
 conda install jupyterlab
 
+
+
+## Anaconda, Jupyter Notebook & JupyterLab — Roles
+
+**Anaconda**
+- Python distribution + package manager
+- Creates isolated environments
+- Installs libraries easily
+
+**Jupyter Notebook**
+- Runs code in cells interactively
+- Shows output instantly
+- Best for learning, testing, analysis
+
+**JupyterLab**
+- Advanced interface for Jupyter
+- Multiple tabs, file explorer, terminal
+- Ideal for full projects
+
+**Workflow**
+Anaconda → create env → launch JupyterLab → run notebooks
